@@ -1,14 +1,15 @@
-name: Generate readme
+name: CI
 
 on:
   push:
     branches:
       - master
-      - init
+      - test
 
 jobs:
   generate-readme:
     runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, 'Automated Change') }}
 
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
