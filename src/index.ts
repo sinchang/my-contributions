@@ -72,6 +72,8 @@ const getPRInfo = async (
 }
 
 const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
+  if (!Array.isArray(urls)) return process.exit(0)
+
   const data = await Promise.allSettled(
     urls.map(async (item) => await getPRInfo(item))
   )
