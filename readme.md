@@ -27,6 +27,5 @@
 - hustcc/npm-robbery - [feat: check package name is available](https://github.com/hustcc/npm-robbery/pull/3)
 ## 2020-08-25
 - willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
-- willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
 ## 2019-12-30
 - chakra-ui/chakra-ui - [ci: add codesandbox config](https://github.com/chakra-ui/chakra-ui/pull/318)
