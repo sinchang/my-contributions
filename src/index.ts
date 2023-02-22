@@ -29,16 +29,15 @@ const parsePRUrlYaml = (): string[] => {
 const updatePRUrlYaml = (
   data: PRInfo[]
 ): {
-  [key: string]: PRInfo[]
+  [date: string]: PRInfo[]
 } => {
   const file = fs.readFileSync('./src/pr.yml', 'utf8')
   let doc: Document
   if (!file) {
     doc = new Document(
       data.reduce((pre, curr) => {
-        const key = `${curr.owner}/${curr.repo}`
-        pre[key] ??= []
-        pre[key].push(curr)
+        pre[formatDate(curr.mergedAt)] ??= []
+        pre[formatDate(curr.mergedAt)].push(curr)
 
         return pre
       }, {})
@@ -49,9 +48,8 @@ const updatePRUrlYaml = (
       [key: string]: PRInfo[]
     } = doc.toJSON()
     data.forEach((curr) => {
-      const key = `${curr.owner}/${curr.repo}`
-      json[key] ??= []
-      json[key].push(curr)
+      json[formatDate(curr.mergedAt)] ??= []
+      json[formatDate(curr.mergedAt)].push(curr)
     })
     doc = new Document(json)
   }
@@ -75,7 +73,7 @@ const getPRInfo = async (
 
 const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
   const data = await Promise.allSettled(
-    newPRUrls.map(async (item) => await getPRInfo(item))
+    urls.map(async (item) => await getPRInfo(item))
   )
 
   const response: PRInfo[] = (
@@ -107,45 +105,21 @@ const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
 }
 
 ;(async () => {
-  // const data = await getAllPRInfo(newPRUrls)
-  const data: PRInfo[] = [
-    {
-      title: "fix1: Can't resolve '@iconify/json/package.json' error",
-      url: 'https://github.com/egoist/tailwindcss-icons/pull/10',
-      mergedAt: '2023-02-20T07:17:34Z',
-      owner: 'egoist',
-      repo: 'tailwindcss-icons',
-    },
-    {
-      title: "chore1: Can't resolve '@iconify/json/package.json' error",
-      url: 'https://github.com/egoist/tailwindcss-icons/pull/10',
-      mergedAt: '2023-02-22T07:17:34Z',
-      owner: 'egoist',
-      repo: 'tailwindcss-icons',
-    },
-  ]
+  const data = await getAllPRInfo(newPRUrls)
+  const unorderedData = updatePRUrlYaml(data)
+  const orderedData = Object.keys(unorderedData)
+    .sort((a, b) => {
+      return dayjs(a).isBefore(b) ? 1 : -1
+    })
+    .reduce((obj, key) => {
+      obj[key] = unorderedData[key]
+      return obj
+    }, {})
 
-  const json = updatePRUrlYaml(data)
-  const reorg: {
-    [key in string]: PRInfo[]
-  } = {}
-
-  for (const key in json) {
-    const items = json[key]
-
-    for (const item of items) {
-      const date = formatDate(item.mergedAt ?? '')
-      reorg[date] ??= []
-
-      reorg[date].push(item)
-    }
-  }
-
-  console.log(reorg)
   let md = `# List of my contributions\n`
 
-  for (const date in reorg) {
-    const items = reorg[date]
+  for (const date in orderedData) {
+    const items = orderedData[date]
     let subMd = `## ${date}\n`
 
     for (const item of items) {
@@ -155,6 +129,6 @@ const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
     md += subMd
   }
 
-  console.log(md)
   fs.writeFileSync('readme.md', md)
+  fs.writeFileSync('./src/pr_url.yml', '')
 })()
