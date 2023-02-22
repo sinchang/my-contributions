@@ -16,3 +16,51 @@
     mergedAt: 2023-01-03T21:17:56Z
     owner: remix-run
     repo: react-router-website
+2022-11-11:
+  - title: "[search-npm]: Fix yarn install script"
+    url: https://github.com/raycast/extensions/pull/3476
+    mergedAt: 2022-11-11T06:04:51Z
+    owner: raycast
+    repo: extensions
+2022-10-10:
+  - title: "ci: disable opening an issue on the initial commit"
+    url: https://github.com/JoshuaKGoldberg/template-typescript-node-package/pull/54
+    mergedAt: 2022-10-10T03:25:42Z
+    owner: JoshuaKGoldberg
+    repo: template-typescript-node-package
+2022-07-19:
+  - title: "fix: fix duplicate plugin/preset detected error"
+    url: https://github.com/gregberge/svgr/pull/747
+    mergedAt: 2022-07-19T06:48:01Z
+    owner: gregberge
+    repo: svgr
+2022-05-22:
+  - title: Add QR code parser
+    url: https://github.com/egoist/tooling.one/pull/30
+    mergedAt: 2022-05-22T11:35:13Z
+    owner: egoist
+    repo: tooling.one
+2021-09-14:
+  - title: Add crossOrigin type to the NextConfig
+    url: https://github.com/vercel/next.js/pull/29033
+    mergedAt: 2021-09-14T14:51:10Z
+    owner: vercel
+    repo: next.js
+2021-09-28:
+  - title: "feat: add type for fastify swaggger uiConfig"
+    url: https://github.com/nestjs/swagger/pull/1508
+    mergedAt: 2021-09-28T10:54:15Z
+    owner: nestjs
+    repo: swagger
+2021-08-18:
+  - title: "feat: Extract the type of initOAuth and uiConfig"
+    url: https://github.com/fastify/fastify-swagger/pull/456
+    mergedAt: 2021-08-18T05:18:15Z
+    owner: fastify
+    repo: fastify-swagger
+2021-08-24:
+  - title: "feature: Add Open Graph to the head"
+    url: https://github.com/fluid-dev/hexo-theme-fluid/pull/550
+    mergedAt: 2021-08-24T06:18:41Z
+    owner: fluid-dev
+    repo: hexo-theme-fluid
