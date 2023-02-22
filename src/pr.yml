@@ -64,3 +64,32 @@
     mergedAt: 2021-08-24T06:18:41Z
     owner: fluid-dev
     repo: hexo-theme-fluid
+2020-08-25:
+  - title: "feat(*): add support for fastify"
+    url: https://github.com/willsoto/nestjs-prometheus/pull/469
+    mergedAt: 2020-08-25T11:58:35Z
+    owner: willsoto
+    repo: nestjs-prometheus
+  - title: "feat(*): add support for fastify"
+    url: https://github.com/willsoto/nestjs-prometheus/pull/469
+    mergedAt: 2020-08-25T11:58:35Z
+    owner: willsoto
+    repo: nestjs-prometheus
+2020-11-06:
+  - title: Convert Windows backslash path to slash path
+    url: https://github.com/shuding/nextra/pull/11
+    mergedAt: 2020-11-06T13:33:24Z
+    owner: shuding
+    repo: nextra
+2020-10-23:
+  - title: "feat: check package name is available"
+    url: https://github.com/hustcc/npm-robbery/pull/3
+    mergedAt: 2020-10-23T16:12:40Z
+    owner: hustcc
+    repo: npm-robbery
+2019-12-30:
+  - title: "ci: add codesandbox config"
+    url: https://github.com/chakra-ui/chakra-ui/pull/318
+    mergedAt: 2019-12-30T10:02:30Z
+    owner: chakra-ui
+    repo: chakra-ui

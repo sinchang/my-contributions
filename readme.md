@@ -21,3 +21,12 @@
 - fluid-dev/hexo-theme-fluid - [feature: Add Open Graph to the head](https://github.com/fluid-dev/hexo-theme-fluid/pull/550)
 ## 2021-08-18
 - fastify/fastify-swagger - [feat: Extract the type of initOAuth and uiConfig](https://github.com/fastify/fastify-swagger/pull/456)
+## 2020-11-06
+- shuding/nextra - [Convert Windows backslash path to slash path](https://github.com/shuding/nextra/pull/11)
+## 2020-10-23
+- hustcc/npm-robbery - [feat: check package name is available](https://github.com/hustcc/npm-robbery/pull/3)
+## 2020-08-25
+- willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
+- willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
+## 2019-12-30
+- chakra-ui/chakra-ui - [ci: add codesandbox config](https://github.com/chakra-ui/chakra-ui/pull/318)
