@@ -26,7 +26,7 @@ const parsePRUrlYaml = (): string[] => {
   return YAML.parse(file)
 }
 
-const updatePRUrlYaml = (
+const updatePRYaml = (
   data: PRInfo[]
 ): {
   [date: string]: PRInfo[]
@@ -108,7 +108,7 @@ const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
 
 ;(async () => {
   const data = await getAllPRInfo(newPRUrls)
-  const unorderedData = updatePRUrlYaml(data)
+  const unorderedData = updatePRYaml(data)
   const orderedData = Object.keys(unorderedData)
     .sort((a, b) => {
       return dayjs(a).isBefore(b) ? 1 : -1
