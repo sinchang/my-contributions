@@ -70,11 +70,6 @@
     mergedAt: 2020-08-25T11:58:35Z
     owner: willsoto
     repo: nestjs-prometheus
-  - title: "feat(*): add support for fastify"
-    url: https://github.com/willsoto/nestjs-prometheus/pull/469
-    mergedAt: 2020-08-25T11:58:35Z
-    owner: willsoto
-    repo: nestjs-prometheus
 2020-11-06:
   - title: Convert Windows backslash path to slash path
     url: https://github.com/shuding/nextra/pull/11
@@ -93,3 +88,9 @@
     mergedAt: 2019-12-30T10:02:30Z
     owner: chakra-ui
     repo: chakra-ui
+2023-03-08:
+  - title: 'fix: button "jumps" between workplace settings tabs'
+    url: https://github.com/toeverything/AFFiNE/pull/1399
+    mergedAt: 2023-03-08T10:07:15Z
+    owner: toeverything
+    repo: AFFiNE

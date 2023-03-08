@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-03-08
+- toeverything/AFFiNE - [fix: button "jumps" between workplace settings tabs](https://github.com/toeverything/AFFiNE/pull/1399)
 ## 2023-02-20
 - egoist/tailwindcss-icons - [fix: Can't resolve '@iconify/json/package.json' error](https://github.com/egoist/tailwindcss-icons/pull/10)
 ## 2023-01-29
