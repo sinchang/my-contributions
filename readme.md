@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-03-08
+- toeverything/AFFiNE - [fix: button "jumps" between workplace settings tabs](https://github.com/toeverything/AFFiNE/pull/1399)
 ## 2023-02-20
 - egoist/tailwindcss-icons - [fix: Can't resolve '@iconify/json/package.json' error](https://github.com/egoist/tailwindcss-icons/pull/10)
 ## 2023-01-29
@@ -26,6 +28,7 @@
 ## 2020-10-23
 - hustcc/npm-robbery - [feat: check package name is available](https://github.com/hustcc/npm-robbery/pull/3)
 ## 2020-08-25
+- willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
 - willsoto/nestjs-prometheus - [feat(*): add support for fastify](https://github.com/willsoto/nestjs-prometheus/pull/469)
 ## 2019-12-30
 - chakra-ui/chakra-ui - [ci: add codesandbox config](https://github.com/chakra-ui/chakra-ui/pull/318)
