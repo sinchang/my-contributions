@@ -70,11 +70,6 @@
     mergedAt: 2020-08-25T11:58:35Z
     owner: willsoto
     repo: nestjs-prometheus
-  - title: "feat(*): add support for fastify"
-    url: https://github.com/willsoto/nestjs-prometheus/pull/469
-    mergedAt: 2020-08-25T11:58:35Z
-    owner: willsoto
-    repo: nestjs-prometheus
 2020-11-06:
   - title: Convert Windows backslash path to slash path
     url: https://github.com/shuding/nextra/pull/11
