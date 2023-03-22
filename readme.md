@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-03-22
+- yetone/openai-translator - [feat: disable i18n debug mode](https://github.com/yetone/openai-translator/pull/425)
 ## 2023-03-08
 - toeverything/AFFiNE - [fix: button "jumps" between workplace settings tabs](https://github.com/toeverything/AFFiNE/pull/1399)
 ## 2023-02-20

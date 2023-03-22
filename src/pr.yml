@@ -94,3 +94,9 @@
     mergedAt: 2023-03-08T10:07:15Z
     owner: toeverything
     repo: AFFiNE
+2023-03-22:
+  - title: "feat: disable i18n debug mode"
+    url: https://github.com/yetone/openai-translator/pull/425
+    mergedAt: 2023-03-22T03:00:14Z
+    owner: yetone
+    repo: openai-translator
