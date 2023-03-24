@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-03-24
+- petyosi/react-virtuoso - [docs: update the default code copy button color](https://github.com/petyosi/react-virtuoso/pull/867)
 ## 2023-03-22
 - yetone/openai-translator - [feat: disable i18n debug mode](https://github.com/yetone/openai-translator/pull/425)
 ## 2023-03-08
