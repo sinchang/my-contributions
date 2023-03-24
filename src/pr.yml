@@ -100,3 +100,9 @@
     mergedAt: 2023-03-22T03:00:14Z
     owner: yetone
     repo: openai-translator
+2023-03-24:
+  - title: "docs: update the default code copy button color"
+    url: https://github.com/petyosi/react-virtuoso/pull/867
+    mergedAt: 2023-03-24T16:11:27Z
+    owner: petyosi
+    repo: react-virtuoso
