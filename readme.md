@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-05-10
+- sindresorhus/cpy - [Add file sourcePath and destinationPath to the progress](https://github.com/sindresorhus/cpy/pull/112)
 ## 2023-03-24
 - petyosi/react-virtuoso - [docs: update the default code copy button color](https://github.com/petyosi/react-virtuoso/pull/867)
 ## 2023-03-22

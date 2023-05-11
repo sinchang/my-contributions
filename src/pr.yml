@@ -106,3 +106,9 @@
     mergedAt: 2023-03-24T16:11:27Z
     owner: petyosi
     repo: react-virtuoso
+2023-05-10:
+  - title: Add file sourcePath and destinationPath to the progress
+    url: https://github.com/sindresorhus/cpy/pull/112
+    mergedAt: 2023-05-10T13:07:46Z
+    owner: sindresorhus
+    repo: cpy
