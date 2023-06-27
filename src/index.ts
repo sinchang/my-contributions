@@ -1,3 +1,4 @@
+#!/usr/bin/env tsx
 import { Octokit } from '@octokit/rest'
 import type { RestEndpointMethodTypes } from '@octokit/rest'
 import fs from 'fs'
@@ -8,6 +9,9 @@ import utc from 'dayjs/plugin/utc'
 dayjs.extend(utc)
 
 const octokit = new Octokit()
+const argv = process.argv.slice(2)
+
+console.log(argv)
 
 type PRInfo = {
   title: string
@@ -19,11 +23,6 @@ type PRInfo = {
 
 const formatDate = (date: string): string => {
   return dayjs.utc(date).format('YYYY-MM-DD')
-}
-
-const parsePRUrlYaml = (): string[] => {
-  const file = fs.readFileSync('./src/pr_url.yml', 'utf8')
-  return YAML.parse(file)
 }
 
 const updatePRYaml = (
@@ -57,8 +56,6 @@ const updatePRYaml = (
   fs.writeFileSync('./src/pr.yml', String(doc))
   return doc.toJSON()
 }
-
-const newPRUrls = parsePRUrlYaml()
 
 const getPRInfo = async (
   url: string
@@ -107,7 +104,7 @@ const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
 }
 
 ;(async () => {
-  const data = await getAllPRInfo(newPRUrls)
+  const data = await getAllPRInfo([argv[0]])
   const unorderedData = updatePRYaml(data)
   const orderedData = Object.keys(unorderedData)
     .sort((a, b) => {

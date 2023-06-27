@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "tsx ./src/index.ts"
-  },
   "keywords": [],
   "author": "sinchang",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.14.0",
-    "tsx": "^3.12.3",
     "typescript": "^4.9.5"
   },
   "dependencies": {
