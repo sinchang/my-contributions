@@ -118,3 +118,8 @@
     mergedAt: 2023-06-27T06:03:33Z
     owner: uiwjs
     repo: npm-unpkg
+  - title: "fix: fix the search button unclickable when back to the homepage"
+    url: https://github.com/uiwjs/npm-unpkg/pull/149
+    mergedAt: 2023-06-27T13:24:24Z
+    owner: uiwjs
+    repo: npm-unpkg
