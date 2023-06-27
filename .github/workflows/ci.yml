@@ -1,10 +1,11 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - master
-      - init
+  workflow_dispatch:
+    inputs:
+      prUrl:
+        description: 'New PR URL'
+        required: true
 
 jobs:
   generate-readme:
@@ -48,7 +49,9 @@ jobs:
           ${{ runner.os }}-pnpm-store-
 
     - run: pnpm install
-    - run: pnpm run build
+    - run: pnpm i tsx@3.12.7 -g
+    - run: chmod +x ./src/index.ts
+    - run: ./src/index.ts ${{ github.event.inputs.prUrl }}
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated Change
