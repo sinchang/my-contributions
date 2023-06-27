@@ -112,3 +112,9 @@
     mergedAt: 2023-05-10T13:07:46Z
     owner: sindresorhus
     repo: cpy
+2023-06-27:
+  - title: "fix: Fix the UI doesn't refresh when navigating between packages"
+    url: https://github.com/uiwjs/npm-unpkg/pull/148
+    mergedAt: 2023-06-27T06:03:33Z
+    owner: uiwjs
+    repo: npm-unpkg
