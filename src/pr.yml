@@ -123,3 +123,9 @@
     mergedAt: 2023-06-27T13:24:24Z
     owner: uiwjs
     repo: npm-unpkg
+2023-07-12:
+  - title: Update check-dist workflow name
+    url: https://github.com/actions/setup-node/pull/710
+    mergedAt: 2023-07-12T17:35:40Z
+    owner: actions
+    repo: setup-node
