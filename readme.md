@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-09-16
+- typescript-eslint/typescript-eslint - [chore(eslint-plugin): refactor getTypeFromNode to parserServices.getTypeAtLocation](https://github.com/typescript-eslint/typescript-eslint/pull/7657)
 ## 2023-07-12
 - actions/setup-node - [Update check-dist workflow name](https://github.com/actions/setup-node/pull/710)
 ## 2023-06-27

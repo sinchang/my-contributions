@@ -129,3 +129,10 @@
     mergedAt: 2023-07-12T17:35:40Z
     owner: actions
     repo: setup-node
+2023-09-16:
+  - title: "chore(eslint-plugin): refactor getTypeFromNode to
+      parserServices.getTypeAtLocation"
+    url: https://github.com/typescript-eslint/typescript-eslint/pull/7657
+    mergedAt: 2023-09-16T04:45:56Z
+    owner: typescript-eslint
+    repo: typescript-eslint
