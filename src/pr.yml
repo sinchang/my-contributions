@@ -136,3 +136,9 @@
     mergedAt: 2023-09-16T04:45:56Z
     owner: typescript-eslint
     repo: typescript-eslint
+2023-11-15:
+  - title: "refactor: remove useless if check"
+    url: https://github.com/huozhi/bunchee/pull/283
+    mergedAt: 2023-11-15T07:27:34Z
+    owner: huozhi
+    repo: bunchee

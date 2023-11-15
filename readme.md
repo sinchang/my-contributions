@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-11-15
+- huozhi/bunchee - [refactor: remove useless if check](https://github.com/huozhi/bunchee/pull/283)
 ## 2023-09-16
 - typescript-eslint/typescript-eslint - [chore(eslint-plugin): refactor getTypeFromNode to parserServices.getTypeAtLocation](https://github.com/typescript-eslint/typescript-eslint/pull/7657)
 ## 2023-07-12
