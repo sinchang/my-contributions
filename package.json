@@ -13,6 +13,6 @@
   "dependencies": {
     "@octokit/rest": "^19.0.7",
     "dayjs": "^1.11.7",
-    "yaml": "^2.2.1"
+    "yaml": "^2.2.2"
   }
 }
