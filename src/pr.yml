@@ -142,3 +142,9 @@
     mergedAt: 2023-11-15T07:27:34Z
     owner: huozhi
     repo: bunchee
+2023-12-21:
+  - title: "feat(pkg::react): support react 18"
+    url: https://github.com/Myriad-Dreamin/typst.ts/pull/438
+    mergedAt: 2023-12-21T10:02:30Z
+    owner: Myriad-Dreamin
+    repo: typst.ts

@@ -1,4 +1,6 @@
 # List of my contributions
+## 2023-12-21
+- Myriad-Dreamin/typst.ts - [feat(pkg::react): support react 18](https://github.com/Myriad-Dreamin/typst.ts/pull/438)
 ## 2023-11-15
 - huozhi/bunchee - [refactor: remove useless if check](https://github.com/huozhi/bunchee/pull/283)
 ## 2023-09-16
