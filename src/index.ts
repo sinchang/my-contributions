@@ -116,18 +116,19 @@ const getAllPRInfo = async (urls: string[]): Promise<PRInfo[]> => {
     }, {})
 
   let md = `# List of my contributions\n`
-
+  let count = 0
   for (const date in orderedData) {
     const items = orderedData[date]
     let subMd = `## ${date}\n`
 
     for (const item of items) {
       subMd += `- ${item.owner}/${item.repo} - [${item.title}](${item.url})\n`
+      count++
     }
 
     md += subMd
   }
 
-  fs.writeFileSync('readme.md', md)
+  fs.writeFileSync('readme.md', md.replace('contributions', `contributions (total: ${count})`))
   fs.writeFileSync('./src/pr_url.yml', '')
 })()
