@@ -148,3 +148,9 @@
     mergedAt: 2023-12-21T10:02:30Z
     owner: Myriad-Dreamin
     repo: typst.ts
+2024-02-06:
+  - title: "docs: fix the GitHub url of the creator"
+    url: https://github.com/nextui-org/tailwind-variants-docs/pull/28
+    mergedAt: 2024-02-06T01:40:18Z
+    owner: nextui-org
+    repo: tailwind-variants-docs

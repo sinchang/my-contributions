@@ -1,4 +1,6 @@
-# List of my contributions
+# List of my contributions (total: 26)
+## 2024-02-06
+- nextui-org/tailwind-variants-docs - [docs: fix the GitHub url of the creator](https://github.com/nextui-org/tailwind-variants-docs/pull/28)
 ## 2023-12-21
 - Myriad-Dreamin/typst.ts - [feat(pkg::react): support react 18](https://github.com/Myriad-Dreamin/typst.ts/pull/438)
 ## 2023-11-15
