@@ -154,3 +154,9 @@
     mergedAt: 2024-02-06T01:40:18Z
     owner: nextui-org
     repo: tailwind-variants-docs
+2024-02-27:
+  - title: "chore(pkg::react): update to React 18 client rendering APIs"
+    url: https://github.com/Myriad-Dreamin/typst.ts/pull/442
+    mergedAt: 2024-02-27T12:08:03Z
+    owner: Myriad-Dreamin
+    repo: typst.ts
